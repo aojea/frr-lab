@@ -4,6 +4,7 @@ services:
 
   R1:
     image: frr:3.0.2
+    hostname: R1
     restart: always
     privileged: true
     sysctls:
@@ -14,6 +15,7 @@ services:
 
   R2:
     image: frr:3.0.2
+    hostname: R2
     restart: always
     privileged: true
     sysctls:
@@ -24,6 +26,7 @@ services:
 
   R3:
     image: frr:3.0.2
+    hostname: R3
     restart: always
     privileged: true
     sysctls:
