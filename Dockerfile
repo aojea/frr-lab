@@ -16,6 +16,7 @@ RUN apt install -y /tmp/frr.deb
 
 COPY frr/daemons /etc/frr/daemons
 RUN systemctl enable frr
+RUN systemctl mask system-getty.slice docker
 
 RUN echo "export VTYSH_PAGER=more" >>  /etc/bash.bashrc
 RUN echo "VTYSH_PAGER=more" >> /etc/environment
