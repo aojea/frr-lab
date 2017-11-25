@@ -12,12 +12,15 @@ To run it you need to:
 1. Download FRR versions that you want:
 
 run `01-download-frr.sh`
+
 2. If you want to try MPLS you need to enable the kernel modules in the host:
 
 run `02-load-modules.sh`
+
 3. Build the docker image
 
 run `docker build -t frr:VERSION_NUMBER .`
+
 4. You can run an example topology of 3 router using the provided compos file:
 
 run `docker-compose up -d`
