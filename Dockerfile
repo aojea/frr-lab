@@ -1,7 +1,13 @@
 FROM ubuntu:16.04
 MAINTAINER A.Ojea
 
-RUN apt-get update; apt-get -y install wget systemd
+RUN apt-get update && \
+    apt-get -y install systemd \
+    wget \
+    tcpdump \
+    inetutils-ping \
+    inetutils-traceroute \
+    netcat
 
 # In order to gracefully stop systemd we need to set the stop signal to
 # SIGRTMIN+3 and set the container environment variable
