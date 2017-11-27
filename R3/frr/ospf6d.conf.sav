@@ -1,0 +1,12 @@
+!
+! Zebra configuration saved from vty
+!   2017/11/26 18:04:09
+!
+frr version 3.0.2
+frr defaults traditional
+!
+!
+!
+!
+line vty
+!

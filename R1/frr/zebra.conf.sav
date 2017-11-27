@@ -1,0 +1,31 @@
+!
+! Zebra configuration saved from vty
+!   2017/11/26 18:00:18
+!
+frr version 3.0.2
+frr defaults traditional
+!
+!
+!
+interface eth0
+!
+interface koko1797366496
+!
+interface koko1834331189
+!
+interface lnkR1R2
+!
+interface lnkR1R3
+!
+interface lo
+ ip address 1.1.1.1/32
+!
+!
+!
+pseudowire R1R3
+ ! Incomplete config, specify the static MPLS labels
+ ! Incomplete config, specify a neighbor address
+!
+!
+line vty
+!

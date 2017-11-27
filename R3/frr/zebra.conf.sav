@@ -1,0 +1,26 @@
+!
+! Zebra configuration saved from vty
+!   2017/11/26 18:04:09
+!
+frr version 3.0.2
+frr defaults traditional
+!
+!
+!
+interface eth0
+!
+interface koko1652846393
+!
+interface koko3864461767
+!
+interface lnkR3R1
+!
+interface lnkR3R2
+!
+interface lo
+ ip address 3.3.3.3/32
+!
+!
+!
+line vty
+!

@@ -1,0 +1,30 @@
+!
+! Zebra configuration saved from vty
+!   2017/11/26 18:04:09
+!
+frr version 3.0.2
+frr defaults traditional
+!
+!
+!
+mpls ldp
+ !
+ address-family ipv4
+  discovery transport-address 3.3.3.3
+  !
+  interface lnkR3R2
+  !
+ !
+!
+!
+l2vpn R3R1 type vpls
+ bridge br0
+ member interface eth1
+ !
+ member pseudowire mpw0
+  neighbor lsr-id 1.1.1.1
+  pw-id 100
+ !
+!
+line vty
+!

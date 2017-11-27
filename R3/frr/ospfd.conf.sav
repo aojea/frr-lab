@@ -1,0 +1,21 @@
+!
+! Zebra configuration saved from vty
+!   2017/11/26 18:04:09
+!
+frr version 3.0.2
+frr defaults traditional
+!
+!
+!
+!
+!
+interface eth0
+!
+interface lnkR3R1
+!
+interface lnkR3R2
+!
+interface lo
+!
+line vty
+!
